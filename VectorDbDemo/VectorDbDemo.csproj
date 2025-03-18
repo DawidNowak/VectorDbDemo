@@ -6,4 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="ChromaDB.Client" Version="1.0.1-ci-13369893450" />
+  </ItemGroup>
+
 </Project>
