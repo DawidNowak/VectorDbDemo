@@ -15,4 +15,12 @@ app.MapGet("/version", async (IChromaDbService chromaDbService) =>
     return Results.Text($"ChromaDB version: {version}");
 });
 
+app.MapPost("/addvector", async (StringObject body, IChromaDbService chromaDbService) =>
+{
+    await chromaDbService.AddVector(Consts.ProductsCollection, body.Text);
+    return Results.Ok();
+});
+
 app.Run();
+
+public record StringObject(string Text);

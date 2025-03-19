@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="ChromaDB.Client" Version="1.0.1-ci-13369893450" />
+    <PackageReference Include="Microsoft.Extensions.AI.Ollama" Version="9.3.0-preview.1.25161.3" />
   </ItemGroup>
 
 </Project>

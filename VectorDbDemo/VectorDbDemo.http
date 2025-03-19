@@ -3,3 +3,11 @@
 GET {{VectorDbDemo_HostAddress}}/version/
 
 ###
+
+POST {{VectorDbDemo_HostAddress}}/addvector/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "Text": "Hello, World!"
+}
