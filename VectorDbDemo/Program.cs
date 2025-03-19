@@ -23,8 +23,14 @@ app.MapGet("/setup", async (IChromaDbService chromaDbService) =>
 
 app.MapPost("/addvector", async (StringObject body, IChromaDbService chromaDbService) =>
 {
-    await chromaDbService.AddVector(Consts.AnimalsCollection, body.Text);
+    await chromaDbService.AddVector(Consts.ProductsCollection, body.Text);
     return Results.Ok();
+});
+
+app.MapPost("/queryvector", async (StringObject body, IChromaDbService chromaDbService) =>
+{
+    var result = await chromaDbService.QueryVectors(Consts.ProductsCollection, body.Text);
+    return Results.Json(result);
 });
 
 app.Run();

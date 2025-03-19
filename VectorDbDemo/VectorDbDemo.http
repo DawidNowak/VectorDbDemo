@@ -17,3 +17,13 @@ Content-Type: application/json
 }
 
 ###
+
+POST {{VectorDbDemo_HostAddress}}/queryvector/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "Text": "music for workout"
+}
+
+###
