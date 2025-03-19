@@ -6,6 +6,7 @@ namespace VectorDbDemo;
 public interface IChromaDbService
 {
     Task<string> GetChromaVersion();
+    Task SetupInitialVectors();
     Task AddVector(string collName, string text, Dictionary<string, object>? metadata = null);
 }
 
@@ -25,6 +26,15 @@ public class ChromaDbService : IChromaDbService, IDisposable
     }
 
     public async Task<string> GetChromaVersion() => await _chromaClient.GetVersion();
+
+    public async Task SetupInitialVectors()
+    {
+        await AddVector(Consts.AnimalsCollection, "Wolf");
+        await AddVector(Consts.AnimalsCollection, "Tiger");
+        await AddVector(Consts.AnimalsCollection, "Eagle");
+        await AddVector(Consts.AnimalsCollection, "Dolphin");
+        await AddVector(Consts.AnimalsCollection, "Snake");
+    }
 
     public async Task AddVector(string collName, string text, Dictionary<string, object>? metadata = null)
     {

@@ -2,5 +2,5 @@
 
 public static class Consts
 {
-    public const string ProductsCollection = "products";
+    public const string AnimalsCollection = "animals";
 }

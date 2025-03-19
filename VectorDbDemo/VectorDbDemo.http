@@ -4,10 +4,16 @@ GET {{VectorDbDemo_HostAddress}}/version/
 
 ###
 
+GET {{VectorDbDemo_HostAddress}}/setup/
+
+###
+
 POST {{VectorDbDemo_HostAddress}}/addvector/
 Accept: application/json
 Content-Type: application/json
 
 {
-  "Text": "Hello, World!"
+  "Text": "Elephant"
 }
+
+###
