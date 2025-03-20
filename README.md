@@ -14,14 +14,10 @@
 
 ## Results
 
-### Search for: Something to read
+### Search for: home appliance
 
-![Something to read](images/something_to_read.png)
+![home_appliance](./images/home_appliance.png)
 
-### Search for: Decor
+### Search for: decor
 
-![Decor](images/decor.png)
-
-### Search for: Music for workout
-
-![Music for workout](images/music_for_workout.png)
+![decor](./images/decor.png)
