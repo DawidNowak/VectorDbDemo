@@ -13,7 +13,9 @@ Accept: application/json
 Content-Type: application/json
 
 {
-  "Text": "Elephant"
+  "Id": 6,
+  "Name": "Electric Kettle",
+  "Description": "A fast-boiling electric kettle with a sleek design. Perfect for quickly heating water for tea, coffee, or instant meals. Features automatic shut-off and boil-dry protection for safety."
 }
 
 ###
@@ -23,7 +25,7 @@ Accept: application/json
 Content-Type: application/json
 
 {
-  "Text": "music for workout"
+  "Text": "home appliance"
 }
 
 ###

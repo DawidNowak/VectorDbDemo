@@ -21,9 +21,9 @@ app.MapGet("/setup", async (IChromaDbService chromaDbService) =>
     return Results.Ok();
 });
 
-app.MapPost("/addvector", async (StringObject body, IChromaDbService chromaDbService) =>
+app.MapPost("/addvector", async (Product product, IChromaDbService chromaDbService) =>
 {
-    await chromaDbService.AddVector(Consts.ProductsCollection, body.Text);
+    await chromaDbService.AddProductVector(Consts.ProductsCollection, product);
     return Results.Ok();
 });
 
